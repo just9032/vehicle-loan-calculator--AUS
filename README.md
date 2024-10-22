@@ -56,8 +56,3 @@ To run the web app locally:
 5. **Disclaimer**: The legal notice about using the app.
 6. **Installation and Setup**: Instructions for running the app locally or accessing it live.
 7. **License**: If your project is open-source, include licensing information.
-
-### Adding README to GitHub:
-- Once you’ve created your `README.md` file, upload it to your GitHub repository following the same process you used for uploading your other files.
-  
-Let me know if you'd like any customizations to the README file or need further assistance!
