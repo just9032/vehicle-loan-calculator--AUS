@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Loan Comparison</title>
+    <!-- Import Google Fonts and Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Section with Fixed Fees and Charges -->
+    <div id="header-container">
+        <h1>Compare 5 Vehicles</h1>
+        <div id="fees-section">
+            <h2>Fixed Fees & Charges (AUD)</h2>
+            <div class="marquee">
+                <p>Dealer Agency Fee: $912.25 | Establishment Fee: $395 | Security Registration Fee: $6 | Fortnightly Repayment Fee: $4.95 | PPSR Fee: $9.75</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Minimum Required Notice -->
+    <div id="required-notice">
+        <p>Vehicle 1 and 2 data required - minimum</p>
+    </div>
+
+    <div id="vehicle-container">
+        <!-- Vehicle 1 -->
+        <div class="vehicle" id="vehicle1">
+            <h2>Vehicle 1</h2>
+            <label for="name1">Vehicle Name:</label>
+            <input type="text" id="name1" class="small-input"><br>
+            <p id="error1" class="error-msg"></p>
+            
+            <label for="price1">Vehicle Price (AUD):</label>
+            <input type="number" id="price1" class="small-input"><br>
+
+            <label for="loan1">Loan Amount (AUD):</label>
+            <input type="number" id="loan1" class="small-input"><br>
+
+            <label for="rate1">Interest Rate (%): <i class="fas fa-info-circle tooltip" title="Annual interest rate charged on the loan."></i></label>
+            <input type="number" step="0.01" id="rate1" class="small-input"><br>
+
+            <label for="term1">Loan Term (Years):</label>
+            <input type="number" id="term1" class="small-input"><br>
+
+            <label for="down1">Down Payment (AUD):</label>
+            <input type="number" id="down1" class="small-input"><br>
+
+            <label for="balloon1">Balloon Payment (AUD): <i class="fas fa-info-circle tooltip" title="A large, lump-sum payment due at the end of the loan term."></i></label>
+            <input type="number" id="balloon1" class="small-input" placeholder="Optional"><br>
+
+            <label for="extra1">Extra Monthly Payment (AUD):</label>
+            <input type="number" id="extra1" class="small-input" placeholder="Optional"><br>
+
+            <p id="result1">Monthly Payment: </p>
+        </div>
+
+
+        <!-- Vehicle 2 -->
+        <div class="vehicle" id="vehicle2">
+            <h2>Vehicle 2</h2>
+            <label for="name2">Vehicle Name:</label>
+            <input type="text" id="name2" class="small-input"><br>
+            <p id="error2" class="error-msg"></p>
+            
+            <label for="price2">Vehicle Price (AUD):</label>
+            <input type="number" id="price2" class="small-input"><br>
+
+            <label for="loan2">Loan Amount (AUD):</label>
+            <input type="number" id="loan2" class="small-input"><br>
+
+            <label for="rate2">Interest Rate (%): <span class="tooltip" title="Annual interest rate charged on the loan.">?</span></label>
+            <input type="number" step="0.01" id="rate2" class="small-input"><br>
+
+            <label for="term2">Loan Term (Years):</label>
+            <input type="number" id="term2" class="small-input"><br>
+
+            <label for="down2">Down Payment (AUD):</label>
+            <input type="number" id="down2" class="small-input"><br>
+
+            <label for="balloon2">Balloon Payment (AUD): <span class="tooltip" title="A large, lump-sum payment due at the end of the loan term.">?</span></label>
+            <input type="number" id="balloon2" class="small-input" placeholder="Optional"><br>
+
+            <label for="extra2">Extra Monthly Payment (AUD):</label>
+            <input type="number" id="extra2" class="small-input" placeholder="Optional"><br>
+
+            <p id="result2">Monthly Payment: </p>
+        </div>
+
+        <!-- Vehicle 3 -->
+        <div class="vehicle" id="vehicle3">
+            <h2>Vehicle 3</h2>
+            <label for="name3">Vehicle Name:</label>
+            <input type="text" id="name3" class="small-input"><br>
+            <p id="error3" class="error-msg"></p>
+            
+            <label for="price3">Vehicle Price (AUD):</label>
+            <input type="number" id="price3" class="small-input"><br>
+
+            <label for="loan3">Loan Amount (AUD):</label>
+            <input type="number" id="loan3" class="small-input"><br>
+
+            <label for="rate3">Interest Rate (%): <span class="tooltip" title="Annual interest rate charged on the loan.">?</span></label>
+            <input type="number" step="0.01" id="rate3" class="small-input"><br>
+
+            <label for="term3">Loan Term (Years):</label>
+            <input type="number" id="term3" class="small-input"><br>
+
+            <label for="down3">Down Payment (AUD):</label>
+            <input type="number" id="down3" class="small-input"><br>
+
+            <label for="balloon3">Balloon Payment (AUD): <span class="tooltip" title="A large, lump-sum payment due at the end of the loan term.">?</span></label>
+            <input type="number" id="balloon3" class="small-input" placeholder="Optional"><br>
+
+            <label for="extra3">Extra Monthly Payment (AUD):</label>
+            <input type="number" id="extra3" class="small-input" placeholder="Optional"><br>
+
+            <p id="result3">Monthly Payment: </p>
+        </div>
+
+        <!-- Vehicle 4 -->
+        <div class="vehicle" id="vehicle4">
+            <h2>Vehicle 4</h2>
+            <label for="name4">Vehicle Name:</label>
+            <input type="text" id="name4" class="small-input"><br>
+            <p id="error4" class="error-msg"></p>
+            
+            <label for="price4">Vehicle Price (AUD):</label>
+            <input type="number" id="price4" class="small-input"><br>
+
+            <label for="loan4">Loan Amount (AUD):</label>
+            <input type="number" id="loan4" class="small-input"><br>
+
+            <label for="rate4">Interest Rate (%): <span class="tooltip" title="Annual interest rate charged on the loan.">?</span></label>
+            <input type="number" step="0.01" id="rate4" class="small-input"><br>
+
+            <label for="term4">Loan Term (Years):</label>
+            <input type="number" id="term4" class="small-input"><br>
+
+            <label for="down4">Down Payment (AUD):</label>
+            <input type="number" id="down4" class="small-input"><br>
+
+            <label for="balloon4">Balloon Payment (AUD): <span class="tooltip" title="A large, lump-sum payment due at the end of the loan term.">?</span></label>
+            <input type="number" id="balloon4" class="small-input" placeholder="Optional"><br>
+
+            <label for="extra4">Extra Monthly Payment (AUD):</label>
+            <input type="number" id="extra4" class="small-input" placeholder="Optional"><br>
+
+            <p id="result4">Monthly Payment: </p>
+        </div>
+
+        <!-- Vehicle 5 -->
+        <div class="vehicle" id="vehicle5">
+            <h2>Vehicle 5</h2>
+            <label for="name5">Vehicle Name:</label>
+            <input type="text" id="name5" class="small-input"><br>
+            <p id="error5" class="error-msg"></p>
+            
+            <label for="price5">Vehicle Price (AUD):</label>
+            <input type="number" id="price5" class="small-input"><br>
+
+            <label for="loan5">Loan Amount (AUD):</label>
+            <input type="number" id="loan5" class="small-input"><br>
+
+            <label for="rate5">Interest Rate (%): <span class="tooltip" title="Annual interest rate charged on the loan.">?</span></label>
+            <input type="number" step="0.01" id="rate5" class="small-input"><br>
+
+            <label for="term5">Loan Term (Years):</label>
+            <input type="number" id="term5" class="small-input"><br>
+
+            <label for="down5">Down Payment (AUD):</label>
+            <input type="number" id="down5" class="small-input"><br>
+
+            <label for="balloon5">Balloon Payment (AUD): <span class="tooltip" title="A large, lump-sum payment due at the end of the loan term.">?</span></label>
+            <input type="number" id="balloon5" class="small-input" placeholder="Optional"><br>
+
+            <label for="extra5">Extra Monthly Payment (AUD):</label>
+            <input type="number" id="extra5" class="small-input" placeholder="Optional"><br>
+
+            <p id="result5">Monthly Payment: </p>
+        </div>
+    </div>
+
+ <!-- Section Divider -->
+    <div class="divider"></div>
+
+    <!-- Round Buttons Section -->
+    <div id="calculate-section">
+        <button class="round-button" onclick="calculateAll()"><i class="fas fa-calculator"></i> Calculate</button>
+        <button class="round-button" onclick="saveData()"><i class="fas fa-save"></i> Save Data</button>
+        <button class="round-button" onclick="loadData()"><i class="fas fa-folder-open"></i> Load Last Session</button>
+        <button class="round-button" onclick="clearAll()"><i class="fas fa-trash-alt"></i> Clear</button>
+        <div id="spinner" class="spinner" style="display: none;"></div>
+    </div>
+
+    <!-- Space for chart -->
+    <canvas id="comparisonChart" width="600" height="400"></canvas>
+
+    <!-- Add script references -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

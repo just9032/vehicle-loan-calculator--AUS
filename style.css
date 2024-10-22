@@ -1,0 +1,184 @@
+/* Overall Page Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+/* Fixed Fees Section */
+#fees-section {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 50%;
+    margin: auto;
+    font-size: 14px;
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+    font-size: 14px;
+}
+
+@keyframes marquee {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+/* Vehicle Container */
+#vehicle-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Vehicle Form Styling */
+.vehicle {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vehicle:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Differently Colored Vehicle Forms */
+#vehicle1 { background-color: #ffedea; }
+#vehicle2 { background-color: #e3fcec; }
+#vehicle3 { background-color: #d7e7ff; }
+#vehicle4 { background-color: #fff8e1; }
+#vehicle5 { background-color: #f9e6ff; }
+
+/* Form Headings */
+.vehicle h2 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Label Styling */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Small Input Fields */
+.small-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Tooltip Styling */
+.tooltip {
+    cursor: pointer;
+    color: #888;
+    font-size: 14px;
+}
+
+.tooltip:hover {
+    color: #000;
+}
+
+/* Error Message Styling */
+.error-msg {
+    color: red;
+    font-size: 12px;
+    margin: -10px 0 10px;
+    display: none;
+}
+
+/* Spinner (loading icon) */
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #4CAF50;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Round Button Styling */
+.round-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.round-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Chart Styling */
+canvas {
+    margin: 20px auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Section Divider */
+.divider {
+    border-bottom: 2px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    #vehicle-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .small-input {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .round-button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
