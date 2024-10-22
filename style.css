@@ -166,6 +166,19 @@ canvas {
     margin: 20px 0;
 }
 
+/* Disclaimer Styling */
+.disclaimer {
+    text-align: center;
+    font-size: 12px;  /* Fine print */
+    color: #666;  /* Lighter color for less emphasis */
+    margin-top: 40px;
+}
+
+.disclaimer p {
+    margin: 0;
+    padding: 10px;
+}
+
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
     #vehicle-container {
