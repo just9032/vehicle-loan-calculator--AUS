@@ -43,15 +43,3 @@ To run the web app locally:
 1. Clone this repository:
    ```bash
    git clone https://github.com/just9032/vehicle-loan-calculator--AUS.git
-
-
----
-
-### Explanation of Sections:
-1. **Description**: A brief overview of what your web app does.
-2. **Features**: Highlight the key features of your app.
-3. **Technologies Used**: Mention the tools and libraries used.
-4. **How to Use**: Provide instructions on how the user can interact with the app.
-5. **Disclaimer**: The legal notice about using the app.
-6. **Installation and Setup**: Instructions for running the app locally or accessing it live.
-7. **License**: If your project is open-source, include licensing information.
