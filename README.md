@@ -42,8 +42,7 @@ This web app provides results based on the input provided. Calculations should n
 To run the web app locally:
 1. Clone this repository:
    ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
-
+   git clone https://github.com/just9032/vehicle-loan-calculator--AUS.git
 
 
 ---
